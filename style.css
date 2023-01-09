@@ -1,0 +1,221 @@
+body {
+    background: linear-gradient(to right, rgb(59, 159, 153), rgb(25, 100, 122) );
+}
+
+.player-body {
+    display: grid;
+    grid-template-columns: 260px 378px;
+    width: 658px;
+    height: 260px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 170px;
+    background: linear-gradient(to right, rgb(229, 229, 229), rgb(214, 214, 214));
+    border-radius: 30px;
+    box-shadow: 5px 5px 10px 5px rgb(32, 89, 98);
+}
+
+.album-cover {
+    margin: 20px;
+    border-radius: 20px;;
+}
+
+.song-player {
+    display: inline-block;
+    align-self: auto;
+}
+
+.song-info {
+    display: block;
+}
+
+.song-info .song-author {
+    font-family: Montserrat-Regular;
+    font-size: 20px;
+    color: rgb(115, 115, 115);
+    margin-bottom: 5px;
+}
+
+.song-info .song-title {
+    font-family: Montserrat-Bold;
+    font-size: 28px;
+    color: rgb(54, 54, 54);
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.song-info .song-album {
+    font-family: Montserrat-Italic;
+    font-size: 16px;
+    color: rgb(115, 115, 115);
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.progress-container {
+    display: inline-block;
+    background: white;
+    border-radius: 5px;
+    width: 70%;
+    height: 10px;
+    cursor: pointer;
+}
+   
+.progress {
+    display: flex;
+    height: 10px;
+    background: linear-gradient(to right, rgb(59, 159, 153), rgb(25, 100, 122) );
+    width: 0;
+    border-radius: 5px;
+    margin: 0;
+}
+
+.song-timer {
+    display: inline-block;
+    width: 28%;
+    height: 30px;
+    font-family: Montserrat-Regular;
+    font-size: 15px;
+    vertical-align: top;    
+    text-align: right;
+    color: rgb(115, 115, 115);
+    
+    }
+
+.buttons {
+    display: block;
+    width: 100%;
+    height: 45px;    
+}
+
+.slider-vol {
+    display: inline-block;
+    background: white;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 120px;
+    height: 10px;
+    margin-left: 50px;
+    margin-bottom: 19px;
+}
+
+.progress-volume {
+    display: flex;
+    height: 10px;
+    background: linear-gradient(to right, rgb(59, 159, 153), rgb(25, 100, 122) );
+    width: 100%;
+    border-radius: 5px;
+}
+
+.vol {
+    float: right;
+}
+
+.playlist {
+    float: right;
+    margin-top: 7px;
+}
+
+.playlist-body {
+    width: 658px;
+    height: 260px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 0;
+    padding-top: 20px;
+    background: linear-gradient(to right, rgb(59, 159, 153), rgb(25, 100, 122) );
+    border-radius: 30px;
+    box-shadow: 0 10px 10px 5px rgb(32, 89, 98), inset 0 10px 10px rgb(32, 89, 98);
+    visibility: hidden;
+}
+
+.playlist-song {
+    display: inline-block;
+    margin-left: 35px;
+    border-bottom: 2px solid white;
+    margin-top: 10px;
+    padding-bottom: 5px;
+}
+
+.playlist-song .number {
+    display: inline-block;
+    width: 25px;
+    margin-right: 5px;
+    color: white;
+    font-family: Montserrat-Regular;
+    font-size: 16px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.playlist-song .song-title {
+    display: inline-block;
+    width: 200px;
+    margin-right: 5px;
+    color: white;
+    font-family: Montserrat-Bold;
+    font-size: 16px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.playlist-song .song-title:hover {
+    cursor: pointer;
+}
+
+.playlist-song .song-author {
+    display: inline-block;
+    width: 100px;
+    margin-right: 5px;
+    color: white;
+    font-family: Montserrat-Regular;
+    font-size: 16px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.playlist-song .song-album {
+    display: inline-block;
+    width: 170px;
+    margin-right: 5px;
+    color: white;
+    font-family: Montserrat-Regular;
+    font-size: 16px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.playlist-song .time {
+    display: inline-block;
+    width: 50px;
+    margin-right: 5px;
+    color: white;
+    font-family: Montserrat-Regular;
+    font-size: 16px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.btn:hover {
+    cursor: pointer;
+}
+
+@font-face {
+    font-family: Montserrat-Regular;
+    src: url(fonts/Montserrat-Regular.ttf);
+}
+
+@font-face {
+    font-family: Montserrat-Italic;
+    src: url(fonts/Montserrat-Italic.ttf);
+}
+
+@font-face {
+    font-family: Montserrat-Bold;
+    src: url(fonts/Montserrat-Bold.ttf);
+}

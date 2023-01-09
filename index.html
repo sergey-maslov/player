@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Maslov's Audio Player</title>
+    <link href="style.css" rel="stylesheet">
+    <script src="player.js" defer></script>
+</head>
+<body>
+
+<div class="player-body">
+    <img class="album-cover" src="images/Queen - Greatest Hits II.png" width="220" height="220" alt="Album cover">
+    <div class="song-player">
+        <div class="song-info">
+            <p class="song-author">Author</p>
+            <p class="song-title">Title</p>
+            <p class="song-album">Album</p>
+        </div>
+        <audio class="audio" src="./songs/Queen - Breakthru.mp3"></audio>
+        <div class="control-panel">
+            <div class="slider">
+                <div class="progress-container">
+                    <div class="progress"></div>
+                </div>
+                <div class="song-timer"><span class="current-time">00:00</span>/<span class="time">00:00</span></div>
+            </div>
+            <div class="buttons">
+                <img class="prev btn" src="images/prev_btn.png" onclick="prev()" width="45" height="45" alt="prev_btn">
+                <img class="btn" id="play-pause" src="images/play_btn.png" width="45" height="45" alt="play_btn">
+                <img class="next btn" src="images/next_btn.png" onclick="next()" width="45" height="45" alt="next_btn">
+                <div class="slider-vol">
+                    <div class="progress-volume"></div>
+                </div>
+                <img class="vol btn" src="images/vol-high.png" width="45" height="45" alt="vol_btn">
+            </div>
+            <img class="playlist btn" src="images/playlist.png" width="45" height="45" alt="playlist_btn">
+        </div>
+    </div>
+</div>
+
+<div class="playlist-body hidden">
+    <div class="playlist-song">
+        <div class="number"></div>
+        <div class="song-title"></div>
+        <div class="song-author"></div>
+        <div class="song-album"></div>
+        <div class="time">04:09</div>
+    </div>
+    <div class="playlist-song">
+        <div class="number"></div>
+        <div class="song-title"></div>
+        <div class="song-author"></div>
+        <div class="song-album"></div>
+        <div class="time">04:10</div>
+    </div>
+    <div class="playlist-song">
+        <div class="number"></div>
+        <div class="song-title"></div>
+        <div class="song-author"></div>
+        <div class="song-album"></div>
+        <div class="time">04:49</div>
+    </div>
+    <div class="playlist-song">
+        <div class="number"></div>
+        <div class="song-title"></div>
+        <div class="song-author"></div>
+        <div class="song-album"></div>
+        <div class="time">04:58</div>
+    </div>
+    <div class="playlist-song">
+        <div class="number"></div>
+        <div class="song-title"></div>
+        <div class="song-author"></div>
+        <div class="song-album"></div>
+        <div class="time">04:43</div>
+    </div>
+    <div class="playlist-song">
+        <div class="number"></div>
+        <div class="song-title"></div>
+        <div class="song-author"></div>
+        <div class="song-album"></div>
+        <div class="time">03:58</div>
+    </div>
+</div>
+
+</body>
+</html>
